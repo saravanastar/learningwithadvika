@@ -12,6 +12,12 @@ document.addEventListener('DOMContentLoaded', () => {
  * Initialize the application
  */
 function initializeApp() {
+    // Sync video URLs to session storage on every page load
+    // This ensures new browser sessions pick up the latest URLs
+    if (typeof syncVideoUrlsToSession === 'function') {
+        syncVideoUrlsToSession();
+    }
+    
     // Initialize pre-populated videos if empty
     initializePrePopulatedVideos();
     
