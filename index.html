@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning with Advika</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <h1>Learning with Advika</h1>
+                    <p class="subtitle">Create and organize interactive lessons</p>
+                </div>
+                <div id="adminControls" style="display: none;">
+                    <button class="btn-secondary" id="logoutBtn">Logout Admin</button>
+                </div>
+                <div id="loginButtonContainer">
+                    <button class="btn-secondary" id="adminLoginBtn">Admin Login</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search lessons...">
+            <button id="clearSearch" class="btn-secondary">Clear</button>
+        </div>
+
+        <div class="category-filter">
+            <button class="filter-btn active" data-category="all">All Categories</button>
+            <button class="filter-btn" data-category="arts-crafts">Arts & Crafts</button>
+            <button class="filter-btn" data-category="coding">Coding</button>
+            <button class="filter-btn" data-category="cooking">Cooking</button>
+            <button class="filter-btn" data-category="languages">Languages</button>
+            <button class="filter-btn" data-category="mechanics">Mechanics</button>
+            <button class="filter-btn" data-category="math">Math</button>
+            <button class="filter-btn" data-category="science">Science</button>
+            <button class="filter-btn" data-category="reading">Reading</button>
+        </div>
+
+        <div class="categories-grid" id="categoriesGrid">
+            <!-- Categories will be dynamically generated -->
+        </div>
+
+        <div class="lessons-container" id="lessonsContainer" style="display: none;">
+            <div class="lessons-header">
+                <h2 id="currentCategoryTitle">All Lessons</h2>
+                <button class="btn-primary" id="addLessonBtn" style="display: none;">+ Add New Lesson</button>
+            </div>
+            <div class="lessons-grid" id="lessonsGrid">
+                <!-- Lessons will be dynamically generated -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Add/Edit Lesson Modal -->
+    <div class="modal" id="lessonModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2 id="modalTitle">Add New Lesson</h2>
+            <form id="lessonForm">
+                <input type="hidden" id="lessonId">
+                
+                <div class="form-group">
+                    <label for="lessonCategory">Category *</label>
+                    <select id="lessonCategory" required>
+                        <option value="">Select a category</option>
+                        <option value="arts-crafts">Arts & Crafts</option>
+                        <option value="coding">Coding</option>
+                        <option value="cooking">Cooking</option>
+                        <option value="languages">Languages</option>
+                        <option value="mechanics">Mechanics</option>
+                        <option value="math">Math</option>
+                        <option value="science">Science</option>
+                        <option value="reading">Reading</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="lessonTitle">Title *</label>
+                    <input type="text" id="lessonTitle" required placeholder="Enter lesson title">
+                </div>
+
+                <div class="form-group">
+                    <label for="lessonDescription">Description *</label>
+                    <textarea id="lessonDescription" required rows="3" placeholder="Enter lesson description"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="lessonType">Lesson Type *</label>
+                    <select id="lessonType" required>
+                        <option value="">Select type</option>
+                        <option value="interactive">Interactive Lesson</option>
+                        <option value="video">Video Lesson</option>
+                    </select>
+                </div>
+
+                <div class="form-group" id="interactiveContentGroup">
+                    <label for="lessonContent">Content *</label>
+                    <textarea id="lessonContent" rows="8" placeholder="Enter lesson content, questions, activities, or step-by-step instructions..."></textarea>
+                </div>
+
+                <div class="form-group" id="videoUrlGroup" style="display: none;">
+                    <label for="videoUrl">Video URL (YouTube or Vimeo)</label>
+                    <input type="url" id="videoUrl" placeholder="https://www.youtube.com/watch?v=... or https://vimeo.com/...">
+                    <small class="help-text">Paste a YouTube or Vimeo link here</small>
+                </div>
+
+                <div class="form-group" id="videoUploadGroup" style="display: none;">
+                    <label for="videoUpload">Or Upload Video File</label>
+                    <input type="file" id="videoUpload" accept="video/*">
+                    <small class="help-text warning">Note: Large videos may exceed localStorage limits (recommended: &lt;5MB)</small>
+                    <div id="videoUploadStatus"></div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn-secondary" id="cancelBtn">Cancel</button>
+                    <button type="submit" class="btn-primary">Save Lesson</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- View Lesson Modal -->
+    <div class="modal" id="viewLessonModal">
+        <div class="modal-content large">
+            <span class="close" id="closeViewModal">&times;</span>
+            <div id="viewLessonContent">
+                <!-- Lesson content will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Login Modal -->
+    <div class="modal" id="adminLoginModal">
+        <div class="modal-content">
+            <span class="close" id="closeAdminModal">&times;</span>
+            <h2>Admin Login</h2>
+            <form id="adminLoginForm">
+                <div class="form-group">
+                    <label for="adminPassword">Password *</label>
+                    <input type="password" id="adminPassword" required placeholder="Enter admin password">
+                </div>
+                <div id="loginError" style="color: var(--danger-color); margin-bottom: 1rem; display: none;"></div>
+                <div class="form-actions">
+                    <button type="button" class="btn-secondary" id="cancelAdminLoginBtn">Cancel</button>
+                    <button type="submit" class="btn-primary">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
+
