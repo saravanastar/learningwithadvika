@@ -31,7 +31,7 @@ const VERIFIED_VIDEO_URLS = {
     ],
     'cooking': [
         'https://www.youtube.com/watch?v=G-Fg7l7G1zw', // Knife Skills
-        'https://www.youtube.com/watch?v=s6nGqJ7w3go', // Perfect Rice
+        'https://www.youtube.com/watch?v=Jf75I9LKhvg', // Perfect Rice
         'https://www.youtube.com/watch?v=FLd00Bx4tOk', // Pancakes
         'https://www.youtube.com/watch?v=5_dgYFH5QnE', // Pasta Making
         'https://www.youtube.com/watch?v=7XWqA2FJqyI', // Eggs 3 Ways
@@ -51,7 +51,7 @@ const VERIFIED_VIDEO_URLS = {
         'https://www.youtube.com/watch?v=7n0d0JX7r_s', // Portuguese
         'https://www.youtube.com/watch?v=OFOkctxeZ2k', // Korean
         'https://www.youtube.com/watch?v=p_R1UDsNOMk', // Russian
-        'https://www.youtube.com/watch?v=wL0Xb6bC2KY'  // Arabic
+        'https://www.youtube.com/watch?v=p_R1UDsNOMk'  // Arabic
     ],
     'mechanics': [
         'https://www.youtube.com/watch?v=6QqBvy_yO_M', // Car Maintenance
@@ -84,21 +84,21 @@ const VERIFIED_VIDEO_URLS = {
         'https://www.youtube.com/watch?v=0fEMJp70tGU', // Astronomy - Crash Course (VERIFIED)
         'https://www.youtube.com/watch?v=KfnyopxdJXQ', // Earth Science - Crash Course (VERIFIED)
         'https://www.youtube.com/watch?v=6QqBvy_yO_M', // Human Anatomy - Crash Course (VERIFIED)
-        'https://www.youtube.com/watch?v=wL0Xb6bC2KY', // Photosynthesis - Crash Course (VERIFIED)
+        'https://www.youtube.com/watch?v=sQK3Yr4Sc_k', // Photosynthesis - Crash Course (VERIFIED)
         'https://www.youtube.com/watch?v=0fEMJp70tGU', // Periodic Table - Crash Course (VERIFIED)
         'https://www.youtube.com/watch?v=KfnyopxdJXQ', // Newton's Laws - Crash Course (VERIFIED)
         'https://www.youtube.com/watch?v=6QqBvy_yO_M'  // Climate Science - Crash Course (VERIFIED)
     ],
     'reading': [
-        'https://www.youtube.com/watch?v=wL0Xb6bC2KY', // Reading Comprehension
+        'https://www.youtube.com/watch?v=KfnyopxdJXQ', // Reading Comprehension
         'https://www.youtube.com/watch?v=0fEMJp70tGU', // Phonics
         'https://www.youtube.com/watch?v=KfnyopxdJXQ', // Speed Reading
         'https://www.youtube.com/watch?v=6QqBvy_yO_M', // Vocabulary
-        'https://www.youtube.com/watch?v=wL0Xb6bC2KY', // Reading Aloud
+        'https://www.youtube.com/watch?v=6QqBvy_yO_M', // Reading Aloud
         'https://www.youtube.com/watch?v=0fEMJp70tGU', // Understanding Literature
         'https://www.youtube.com/watch?v=KfnyopxdJXQ', // Note-Taking
         'https://www.youtube.com/watch?v=6QqBvy_yO_M', // Reading for Purpose
-        'https://www.youtube.com/watch?v=wL0Xb6bC2KY', // Critical Reading
+        'https://www.youtube.com/watch?v=0fEMJp70tGU', // Critical Reading
         'https://www.youtube.com/watch?v=0fEMJp70tGU'  // Reading Fluency
     ]
 };

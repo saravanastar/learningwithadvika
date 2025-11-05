@@ -257,7 +257,7 @@ function initializePrePopulatedVideos() {
         
         // Cooking
         { category: 'cooking', title: 'Cooking Basics - Knife Skills', description: 'Master essential knife techniques for safe and efficient cooking', type: 'video', videoUrl: 'https://www.youtube.com/watch?v=G-Fg7l7G1zw', content: '' },
-        { category: 'cooking', title: 'How to Cook Perfect Rice', description: 'Learn to make fluffy, non-sticky rice every time', type: 'video', videoUrl: 'https://www.youtube.com/watch?v=s6nGqJ7w3go', content: '' },
+        { category: 'cooking', title: 'How to Cook Perfect Rice', description: 'Learn to make fluffy, non-sticky rice every time', type: 'video', videoUrl: 'https://www.youtube.com/watch?v=Jf75I9LKhvg', content: '' },
         { category: 'cooking', title: 'Easy Pancake Recipe', description: 'Simple and delicious pancakes from scratch', type: 'video', videoUrl: 'https://www.youtube.com/watch?v=FLd00Bx4tOk', content: '' },
         { category: 'cooking', title: 'Basic Pasta Making', description: 'Learn to make fresh pasta at home', type: 'video', videoUrl: 'https://www.youtube.com/watch?v=5_dgYFH5QnE', content: '' },
         { category: 'cooking', title: 'How to Cook Eggs - 3 Ways', description: 'Master boiled, scrambled, and fried eggs', type: 'video', videoUrl: 'https://www.youtube.com/watch?v=7XWqA2FJqyI', content: '' },
@@ -277,7 +277,7 @@ function initializePrePopulatedVideos() {
         { category: 'languages', title: 'Portuguese for Beginners', description: 'Introduction to Portuguese language', type: 'video', videoUrl: 'https://www.youtube.com/watch?v=7n0d0JX7r_s', content: '' },
         { category: 'languages', title: 'Learn Korean - Hangul Basics', description: 'Master the Korean alphabet', type: 'video', videoUrl: 'https://www.youtube.com/watch?v=OFOkctxeZ2k', content: '' },
         { category: 'languages', title: 'Russian for Complete Beginners', description: 'Start learning Russian from scratch', type: 'video', videoUrl: 'https://www.youtube.com/watch?v=p_R1UDsNOMk', content: '' },
-        { category: 'languages', title: 'Arabic Language Basics', description: 'Introduction to Arabic for beginners', type: 'video', videoUrl: 'https://www.youtube.com/watch?v=wL0Xb6bC2KY', content: '' },
+        { category: 'languages', title: 'Arabic Language Basics', description: 'Introduction to Arabic for beginners', type: 'video', videoUrl: 'https://www.youtube.com/watch?v=p_R1UDsNOMk', content: '' },
         
         // Mechanics
         { category: 'mechanics', title: 'Car Maintenance Basics', description: 'Essential car maintenance every driver should know', type: 'video', videoUrl: 'https://www.youtube.com/watch?v=6QqBvy_yO_M', content: '' },
@@ -316,15 +316,15 @@ function initializePrePopulatedVideos() {
         { category: 'science', title: 'Climate Science Basics', description: 'Understanding weather and climate', type: 'video', videoUrl: 'https://www.youtube.com/watch?v=6QqBvy_yO_M', content: '' },
         
         // Reading
-        { category: 'reading', title: 'Reading Comprehension Strategies', description: 'Improve your reading skills and understanding', type: 'video', videoUrl: 'https://www.youtube.com/watch?v=wL0Xb6bC2KY', content: '' },
+        { category: 'reading', title: 'Reading Comprehension Strategies', description: 'Improve your reading skills and understanding', type: 'video', videoUrl: 'https://www.youtube.com/watch?v=KfnyopxdJXQ', content: '' },
         { category: 'reading', title: 'Phonics for Beginners', description: 'Learn to read with phonics', type: 'video', videoUrl: 'https://www.youtube.com/watch?v=0fEMJp70tGU', content: '' },
         { category: 'reading', title: 'Speed Reading Techniques', description: 'Read faster while maintaining comprehension', type: 'video', videoUrl: 'https://www.youtube.com/watch?v=KfnyopxdJXQ', content: '' },
         { category: 'reading', title: 'Vocabulary Building', description: 'Strategies to expand your vocabulary', type: 'video', videoUrl: 'https://www.youtube.com/watch?v=6QqBvy_yO_M', content: '' },
-        { category: 'reading', title: 'Reading Aloud Tips', description: 'Improve your reading aloud skills', type: 'video', videoUrl: 'https://www.youtube.com/watch?v=wL0Xb6bC2KY', content: '' },
+        { category: 'reading', title: 'Reading Aloud Tips', description: 'Improve your reading aloud skills', type: 'video', videoUrl: 'https://www.youtube.com/watch?v=6QqBvy_yO_M', content: '' },
         { category: 'reading', title: 'Understanding Literature', description: 'Analyze and appreciate literary works', type: 'video', videoUrl: 'https://www.youtube.com/watch?v=0fEMJp70tGU', content: '' },
         { category: 'reading', title: 'Note-Taking While Reading', description: 'Effective note-taking strategies', type: 'video', videoUrl: 'https://www.youtube.com/watch?v=KfnyopxdJXQ', content: '' },
         { category: 'reading', title: 'Reading for Different Purposes', description: 'Adapt your reading style to your goals', type: 'video', videoUrl: 'https://www.youtube.com/watch?v=6QqBvy_yO_M', content: '' },
-        { category: 'reading', title: 'Critical Reading Skills', description: 'Develop analytical thinking through reading', type: 'video', videoUrl: 'https://www.youtube.com/watch?v=wL0Xb6bC2KY', content: '' },
+        { category: 'reading', title: 'Critical Reading Skills', description: 'Develop analytical thinking through reading', type: 'video', videoUrl: 'https://www.youtube.com/watch?v=0fEMJp70tGU', content: '' },
         { category: 'reading', title: 'Reading Fluency Practice', description: 'Improve reading speed and accuracy', type: 'video', videoUrl: 'https://www.youtube.com/watch?v=0fEMJp70tGU', content: '' }
     ];
 
